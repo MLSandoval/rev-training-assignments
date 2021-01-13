@@ -1,0 +1,18 @@
+package ioDemo;
+import java.util.*;
+
+public class IOMain {
+
+	public static void main(String []args) {
+		
+	}
+	
+	public void byteStreamMethod() throws Exception {
+		FileInputStream in = null;
+		FileOutputStream out = null;
+		
+		try {
+			in = new FileInputStream("xanadu.txt");
+		}
+	}
+}

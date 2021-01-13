@@ -1,0 +1,8 @@
+package ioDemo;
+
+public class CharacterFileStream {
+
+	public static void main(String[] args) {
+		
+	}
+}

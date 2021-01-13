@@ -1,0 +1,16 @@
+package ioDemo;
+import java.io.*;
+
+public class CharacterFileStream {
+
+	public static void main(String[] args) {
+		
+		FileInputStream in = null;
+		FileOutputStream out = null;
+		
+		try {
+			in = new FileInputStream("deedee.txt");
+			out = new FileOutputStream();
+		}
+	}
+}
