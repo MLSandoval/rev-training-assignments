@@ -1,0 +1,12 @@
+package interfaceDemo;
+
+public class Student extends Person implements First,Second {
+
+	public void sayHello() {
+		System.out.println("Hello Hello Student, abstract method from person overriden in Student");
+	}
+	
+	public void method1() {
+		System.out.println("Student method1, required to be defined as student implements the 'First' interface");
+	}
+}

@@ -1,0 +1,8 @@
+package interfacesClassAssignment;
+
+public abstract class Canine implements Animal {
+	
+	String preferredFood = "pizza";
+	
+	
+}

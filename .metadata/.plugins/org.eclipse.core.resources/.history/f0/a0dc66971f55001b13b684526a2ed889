@@ -1,0 +1,5 @@
+package exceptionAssignment;
+
+public class CustomExcThrow {
+
+}

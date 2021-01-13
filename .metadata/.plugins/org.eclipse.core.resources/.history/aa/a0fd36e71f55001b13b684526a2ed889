@@ -1,0 +1,11 @@
+package exceptionAssignment;
+
+public class CustomArrExcClass extends ArrayIndexOutOfBoundsException {
+
+	
+	public static void main(String []...args) {
+		
+	}
+	
+	
+}

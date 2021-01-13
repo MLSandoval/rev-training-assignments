@@ -1,0 +1,21 @@
+package interfacesClassAssignment;
+
+public class MainClass {
+
+	public static void main(String [] args) {
+		
+		Canine dog1 = new Malinois();
+		Feline cat1 = new Bengal();
+		
+		System.out.println("Dog is extinct? "+Animal.isExtant);
+		System.out.println("Cat is extinct? "+Animal.isExtant);
+		System.out.println("");
+		
+		dog1.declareCaninePreferredFood();
+		cat1.declareFelinePreferredFood();
+		System.out.println("");
+		
+		
+		
+	}
+}

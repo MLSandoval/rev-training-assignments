@@ -1,0 +1,17 @@
+package com.revature.day02.statics;
+
+public class StudentManager {
+	public static void main(String []args) {
+		Student s1 = new Student(1, "Miky"); //these 2 students will be created in the heap, each with own location
+		Student s2 = new Student(2, "Maky"); //however, all students go to same uni, so they will all share the same static variable
+		
+		System.out.println(s1+" "+ s1.universityName);
+		System.out.println(s2+" "+ s1.universityName);
+		
+		s1.universityName = "UCB";
+		
+		System.out.println(s1+" "+ s1.universityName);
+		System.out.println(s2+" "+ s1.universityName);
+		
+	}
+}

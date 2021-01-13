@@ -1,0 +1,8 @@
+package com.revature.day01;
+public class StudentManager{
+	public static void main(String []args){
+		Student s1=new Student();
+		s1.inputData(1,"Jas");
+		s1.dispalyData();
+	}
+}

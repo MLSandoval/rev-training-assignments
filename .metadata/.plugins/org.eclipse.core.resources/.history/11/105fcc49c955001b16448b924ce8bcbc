@@ -1,0 +1,8 @@
+package interfaceDemo;
+
+public class Student extends Person {
+
+	public void sayHello() {
+		System.out.println("Hello Hello Student, abstract method from person overriden in Student");
+	}
+}

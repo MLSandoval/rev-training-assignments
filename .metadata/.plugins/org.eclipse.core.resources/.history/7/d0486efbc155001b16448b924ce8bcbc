@@ -1,0 +1,15 @@
+package constructorDemo;
+
+public class MainClass {
+
+	public static void main(String [] args) {
+		
+		ConstructorDemo obj = new ConstructorDemo();
+		
+		System.out.println("ConstructorDemo obj: ");
+		System.out.println(obj);
+		System.out.println("");
+		
+		SubClass sub = new SubClass();
+	}
+}

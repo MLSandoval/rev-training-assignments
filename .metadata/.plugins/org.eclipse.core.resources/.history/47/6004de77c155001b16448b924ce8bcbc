@@ -1,0 +1,17 @@
+package constructorDemo;
+
+public class SuperClass {
+
+	private int x;
+	
+	public SuperClass() {
+		super();
+		
+	}
+	
+	public SuperClass(int x) {
+		super();
+		this.x = x;
+		System.out.println("Parameterized Constructor Super Class");
+	}
+}

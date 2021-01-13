@@ -1,0 +1,10 @@
+package ArithmeticProj;
+
+public final class ArithMain {
+	
+	public static void main(String ...args) {
+		
+		System.out.println(ArithClass.addition(3,4,5));
+		
+	}
+}

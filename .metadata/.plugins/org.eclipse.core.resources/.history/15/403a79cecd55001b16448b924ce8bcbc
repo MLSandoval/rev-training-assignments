@@ -1,0 +1,14 @@
+package interfacesClassAssignment;
+
+public class MainClass {
+
+	public static void main(String [] args) {
+		
+		Canine dog1 = new Malinois();
+		Feline cat1 = new Bengal();
+		
+		dog1.declareCaninePreferredFood();
+		cat1.declareFelinePreferredFood();
+		
+	}
+}

@@ -1,0 +1,25 @@
+package com.revature.day01;
+
+import java.util.Date;
+
+public class Student{
+	
+	private int id;
+	private String name;
+	private Date dob;
+	
+	public Student() {
+		System.out.println("Default constructor invoked.");
+	}
+	
+	public Student(int id,String name){
+		System.out.println("Parameterized constructor invoked.");
+		this.id=id;
+		this.name=name;
+		this.dob=new Date();
+	}
+
+	public void displayData(){
+		System.out.println("ID : "+id+" , Name : "+name+" , DOB : "+dob);
+	}
+}

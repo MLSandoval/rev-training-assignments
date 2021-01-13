@@ -1,0 +1,21 @@
+package customExceptions;
+
+import java.util.*;
+
+public class ExtendedArrayException extends ArrayIndexOutOfBoundsException {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	static String str;
+	
+	ExtendedArrayException(String s){
+		super(s);
+		str = s;
+	}
+	
+	public String getMessage(){
+		return str;
+	}
+}

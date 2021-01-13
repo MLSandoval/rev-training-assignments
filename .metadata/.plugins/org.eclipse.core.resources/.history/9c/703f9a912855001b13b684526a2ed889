@@ -1,0 +1,16 @@
+package customExceptions;
+
+public class ExtendedArrayException extends ArrayIndexOutOfBoundsException {
+
+	
+	static String str;
+	
+	ExtendedArrayException(String s){
+		super(s);
+		str = s;
+	}
+	
+	public String getMessage(){
+		return str;
+	}
+}

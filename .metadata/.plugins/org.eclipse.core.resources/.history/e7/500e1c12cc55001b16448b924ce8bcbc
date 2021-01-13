@@ -1,0 +1,5 @@
+package interfacesClassAssignment;
+
+public abstract class Feline extends Feline {
+
+}

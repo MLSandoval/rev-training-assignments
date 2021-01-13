@@ -1,0 +1,5 @@
+package interfacesClassAssignment;
+
+public class Malinois extends Canine {
+
+}

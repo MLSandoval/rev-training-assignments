@@ -1,0 +1,5 @@
+package nonaccess_modifiers;
+
+public class StaticKeyword {
+
+}

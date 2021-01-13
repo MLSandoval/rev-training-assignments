@@ -1,0 +1,10 @@
+package interfacesClassAssignment;
+
+public abstract class Feline implements Animal {
+	
+	String preferredFood = "pizza";
+	
+	public void makeSound() {
+		System.out.println("Hm, yes, indubitably.");
+	}
+}

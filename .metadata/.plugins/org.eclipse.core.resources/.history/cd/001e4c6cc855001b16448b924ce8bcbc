@@ -1,0 +1,20 @@
+package interfaceDemo;
+
+public class MainClass {
+
+	
+	public static void main(String []args) {
+		
+		//we want to instantiate a student and employee, they are persons, but we dont want to be able to instantiate a person
+		Person s = new Student();
+		Person e = new Employee();
+		
+		System.out.println("Student Person: ");
+		System.out.println(s);
+		
+		System.out.println("");
+	}
+	
+	
+	
+}

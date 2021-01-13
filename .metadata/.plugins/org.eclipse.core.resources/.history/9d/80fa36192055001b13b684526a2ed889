@@ -1,0 +1,12 @@
+package exceptionAssignment;
+
+public class CustomExcThrow {
+
+	public static void main(String []...args) {
+		throwArrExc();
+	}
+	
+	public throwArrExc(){
+		
+	}
+}

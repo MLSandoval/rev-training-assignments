@@ -1,0 +1,10 @@
+package com.revature.day02.statics;
+
+public class StudentManager {
+	public static void main(String []args) {
+		Student s1 = new Student(1. "Miky");
+		Student s2 = new Student(2. "Maky");
+		System.out.println(s1);
+		System.out.println(s2);
+	}
+}

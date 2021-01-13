@@ -1,0 +1,12 @@
+package interfaceDemo;
+
+public abstract class Person {
+
+	public void sayHi() {
+		System.out.println("hi hi hi");
+	}
+	
+	public abstract void sayHello();
+	
+	
+}

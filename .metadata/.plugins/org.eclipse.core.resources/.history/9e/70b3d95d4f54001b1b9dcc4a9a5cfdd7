@@ -1,0 +1,12 @@
+package com.revature.day01;
+public class StudentManager{
+	public static void main(String []args){
+		
+		Student s1=new Student();
+		String name = args[0];
+		int id = Integer.parseInt(args[1]);
+		
+		s1.inputData(id, name);
+		s1.dispalyData();
+	}
+}
