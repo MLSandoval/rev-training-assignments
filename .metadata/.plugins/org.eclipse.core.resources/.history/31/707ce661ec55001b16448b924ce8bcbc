@@ -1,0 +1,19 @@
+package ioDemo;
+import java.io.*;
+
+public class FileManager {
+	
+	public static void main(String ...args) {
+		
+	}
+	
+	public void manageFiles() throws Exception{
+		
+		//Make a File object that represents an existing file
+		File file = new File("fileManagerFile.txt");
+		
+		//Make a directory
+		File dir = new File("src.ioDemo");
+		
+	}
+}

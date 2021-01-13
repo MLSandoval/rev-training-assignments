@@ -1,0 +1,24 @@
+package ioDemo;
+import java.io.*;
+
+public class FileManager {
+	
+	public static void main(String ...args) throws Exception{
+		
+		//Make a File object that represents an existing file
+		File file = new File("fileManagerFile.txt");
+		
+		//Make a directory
+		File dir = new File("src.ioDemo");
+		//mkdir
+		if(dir.isDirectory()) {
+			String[] dirContents = dir.list();
+			for(int i = 0; i < dirContents.length; i++) {
+				System.out.println(dirContents[i]);
+			}
+		}
+		System.out.println(dir.getAbsolutePath());
+		
+		boolean isDeleted = file.delete();
+	}
+}
