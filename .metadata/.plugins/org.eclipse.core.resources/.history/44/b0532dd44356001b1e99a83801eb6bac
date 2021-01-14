@@ -1,0 +1,53 @@
+package readWriteEmployees;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class MainClass {
+	
+	static private int employeeCount=0;
+
+	public static void main(String []args) throws IOException{
+		
+		readWriteEmployee("employees.txt");
+		
+	}
+	
+	
+	
+	
+	
+	protected static void readWriteEmployee(String readFilePath) throws FileNotFoundException, IOException  {
+		
+		BufferedReader inputStream = null;
+        BufferedWriter outputStream = null;
+        
+        try {
+            inputStream = new BufferedReader(new FileReader(readFilePath));
+            outputStream = new BufferedWriter(new FileWriter("employeesCopy.txt"));
+            String l;
+            while ((l = inputStream.readLine()) != null) {
+            	
+            	String[] splitLine = l.split(":");
+            	
+            	Employee emp = new Employee(splitLine[0], Integer.parseInt(splitLine[1]), Integer.parseInt(splitLine[2]), splitLine[3]);
+            			
+                outputStream.write("Name: "+emp.getName()+"\nID:"+Integer.toString(emp.getId())+"\nSalary: "+Integer.toString(emp.getSalary())+"\nTitle:"+emp.getTitle());
+                outputStream.write("\n");
+               
+                employeeCount++;
+            }
+        } finally {
+            if (inputStream != null) {
+                inputStream.close();
+            }
+            if (outputStream != null) {
+                outputStream.close();
+            }
+        }
+	}
+}
