@@ -1,0 +1,59 @@
+package readWriteEmployees;
+import java.io.*;
+
+public class Employee {
+
+	private String name;
+	private int id;
+	private int salary;
+	private String title;
+	
+	protected void readWriteEmployee() throws FileNotFoundException {
+		BufferedReader inputStream = null;
+        BufferedWriter outputStream = null;
+        try {
+            inputStream = new BufferedReader(new FileReader("employees.txt"));
+            outputStream = new BufferedWriter(new FileWriter("employeesCopy.txt"));
+            String l;
+            while ((l = inputStream.readLine()) != null) {
+                outputStream.write(l);
+                outputStream.write("\n");
+               
+            }
+        } finally {
+            if (inputStream != null) {
+                inputStream.close();
+            }
+            if (outputStream != null) {
+                outputStream.close();
+            }
+        }
+	}
+	
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getSalary() {
+		return salary;
+	}
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	
+}
